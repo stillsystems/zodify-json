@@ -9,3 +9,10 @@ src/**
 **/*.map
 **/*.ts
 esbuild.js
+.vscode-test.js
+tsconfig.json
+test-output.txt
+.nvmrc
+.github/**
+.editorconfig
+.eslintrc.json
