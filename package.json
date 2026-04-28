@@ -1,0 +1,70 @@
+{
+  "name": "zodify-json",
+  "displayName": "Zodify JSON",
+  "description": "Instantly paste JSON payloads as fully typed Zod schemas.",
+  "version": "0.0.1",
+  "icon": "icon.png",
+  "publisher": "billy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billy/zodify-json.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "zodify-json.pasteAsZod",
+        "title": "Zodify JSON: Paste as Zod Schema"
+      }
+    ],
+    "configuration": {
+      "title": "Zodify JSON",
+      "properties": {
+        "zodify-json.generateTypes": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically append the TypeScript z.infer type export after the schema."
+        },
+        "zodify-json.useUnknown": {
+          "type": "boolean",
+          "default": true,
+          "description": "Use z.unknown() instead of z.any() for empty arrays or unknown types."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "esbuild": "^0.20.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
