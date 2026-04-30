@@ -4,11 +4,16 @@
   "description": "Instantly paste JSON payloads as fully typed Zod schemas.",
   "version": "1.0.0",
   "icon": "icon.png",
-  "publisher": "billy",
+  "publisher": "stillsystems",
   "repository": {
     "type": "git",
-    "url": "https://github.com/billy/zodify-json.git"
+    "url": "https://github.com/stillsystems/zodify-json.git"
   },
+  "bugs": {
+    "url": "https://github.com/stillsystems/zodify-json/issues"
+  },
+  "homepage": "https://github.com/stillsystems/zodify-json#readme",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -35,6 +40,23 @@
         "title": "Zodify JSON: Paste as Zod Schema"
       }
     ],
+    "keybindings": [
+      {
+        "command": "zodify-json.pasteAsZod",
+        "key": "ctrl+shift+alt+z",
+        "mac": "cmd+shift+alt+z",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorFocus",
+          "command": "zodify-json.pasteAsZod",
+          "group": "9_cutcopypaste"
+        }
+      ]
+    },
     "configuration": {
       "title": "Zodify JSON",
       "properties": {
@@ -82,5 +104,8 @@
   },
   "overrides": {
     "serialize-javascript": "^7.0.5"
+  },
+  "dependencies": {
+    "zod": "^4.4.1"
   }
 }

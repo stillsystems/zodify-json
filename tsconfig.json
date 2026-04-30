@@ -6,6 +6,7 @@
     "sourceMap": true,
     "rootDir": "src",
     "strict": true,   /* Enable all strict type-checking options */
+    "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
