@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=stillsystems.zodify-json"><img src="https://img.shields.io/visual-studio-marketplace/v/stillsystems.zodify-json?label=Marketplace" alt="VS Code Marketplace Version"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=stillsystems.zodify-json"><img src="https://img.shields.io/visual-studio-marketplace/i/stillsystems.zodify-json" alt="Installs"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=stillsystems.zodify-json"><img src="https://img.shields.io/visual-studio-marketplace/r/stillsystems.zodify-json" alt="Rating"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=stillsystems.zodify-json"><img src="https://vsmarketplacebadge.apphb.com/version/stillsystems.zodify-json.svg" alt="Version"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=stillsystems.zodify-json"><img src="https://vsmarketplacebadge.apphb.com/installs/stillsystems.zodify-json.svg" alt="Installs"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=stillsystems.zodify-json"><img src="https://vsmarketplacebadge.apphb.com/rating/stillsystems.zodify-json.svg" alt="Rating"></a>
   <a href="https://open-vsx.org/extension/stillsystems/zodify-json"><img src="https://img.shields.io/open-vsx/v/stillsystems/zodify-json?label=Open%20VSX&color=purple" alt="Open VSX Version"></a>
 </p>
 
