@@ -2,7 +2,7 @@
   "name": "zodify-json",
   "displayName": "Zodify JSON",
   "description": "Instantly paste JSON payloads as fully typed Zod schemas.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "icon": "icon.png",
   "publisher": "stillsystems",
   "repository": {
