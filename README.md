@@ -5,8 +5,15 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=stillsystems.zodify-json"><img src="https://vsmarketplacebadges.dev/version/stillsystems.zodify-json.png" alt="VS Code Marketplace Version"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=stillsystems.zodify-json"><img src="https://img.shields.io/visual-studio-marketplace/v/stillsystems.zodify-json?label=Marketplace" alt="VS Code Marketplace Version"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=stillsystems.zodify-json"><img src="https://img.shields.io/visual-studio-marketplace/i/stillsystems.zodify-json" alt="Installs"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=stillsystems.zodify-json"><img src="https://img.shields.io/visual-studio-marketplace/r/stillsystems.zodify-json" alt="Rating"></a>
+  <a href="https://open-vsx.org/extension/stillsystems/zodify-json"><img src="https://img.shields.io/open-vsx/v/stillsystems/zodify-json?label=Open%20VSX&color=purple" alt="Open VSX Version"></a>
+</p>
+
+<p align="center">
   <a href=".github/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/stillsystems/zodify-json/ci.yml?branch=main" alt="Build Status"></a>
+  <a href="https://github.com/stillsystems/zodify-json/stargazers"><img src="https://img.shields.io/github/stars/stillsystems/zodify-json?style=flat&color=yellow" alt="Stars"></a>
   <a href="LICENSE"><img src="https://img.shields.io/github/license/stillsystems/zodify-json" alt="License"></a>
 </p>
 
@@ -42,7 +49,11 @@ Say goodbye to manually writing Zod schemas or relying on outdated "JSON to TS" 
 1. Open VS Code and go to the Extensions tab (`Ctrl+Shift+X` / `Cmd+Shift+X`).
 2. Search for **Zodify JSON** and click Install.
 
-**Option 2: Quick Open**
+**Option 2: From Open VSX (for VSCodium, etc.)**
+1. Search for **Zodify JSON** in the Open VSX registry.
+2. Click **Install**.
+
+**Option 3: Quick Open**
 Press `Ctrl+P` / `Cmd+P` to launch VS Code Quick Open and paste the following command:
 ```bash
 ext install stillsystems.zodify-json
