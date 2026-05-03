@@ -1,14 +1,22 @@
 name: CI
-
 on:
   push:
-    branches: [main, master]
+    branches: [main]
   pull_request:
-    branches: [main, master]
+    branches: [main]
+
+permissions:
+  contents: read
 
 jobs:
-  node-ci:
-    uses: stillsystems/.github/.github/workflows/reusable-node-ci.yml@main
-    with:
-      node-version: '20.x'
-      run-xvfb: true
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run compile
+      - run: npm test
