@@ -18,3 +18,9 @@ yarn-error.log*
 
 # Local Editor settings
 .vscode/settings.json
+
+# Temporary
+release-temp/
+temp-github-repo-2/
+out/
+dist/
